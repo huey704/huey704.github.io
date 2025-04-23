@@ -3,12 +3,6 @@
 
 <head>
     <style type="text/css">
-        img {
-            position: relative;
-            bottom: 5px;
-            left: 570px;
-        }
-
         body {
             background-color: #353434;
             color: rgb(255, 255, 255);
@@ -38,6 +32,23 @@
         .second-paragraph {
             padding-top: 10px;
         }
+
+        #social_logos {
+            position: absolute;
+            cursor: pointer;
+            bottom: 10px;
+            left: 50px;
+            border-radius: 10px;
+        }
+
+        .github_logo {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px
+        }
+
+        .instagram_logo {
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -50,7 +61,20 @@
 
         <p class="second-paragraph">I am currently learning CSS and HTML while working on a website with that knowledge.
         </p>
-        <!-- <img src="fun man.png"> -->
+
+    </div>
+
+
+    <div id="social_logos">
+        <a href="https://github.com/huey704" target="_blank">
+            <img class="github_logo" src="github-mark.png" height="64" alt="Github logo">
+        </a>
+        <a href="https://www.instagram.com/arturotorresdamian17/" target="_blank">
+            <img class="instagram_logo" src="image.png" height="64" alt="Instagram logo">
+        </a>
+        <a href="mailto:arturotorresdamian1@gmail.com" target="_blank">
+            <img class="gmail_logo" src="image copy.png" height="64" alt="email">
+        </a>
     </div>
 
 </body>
