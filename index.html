@@ -20,13 +20,22 @@
             margin: 0px;
         }
 
-        #container {
+        #leader_container {
             position: relative;
-            width: 500px;
-            border: 2px solid rgb(124, 121, 121);
-            margin: auto;
+            margin: 0 auto;
+        }
+
+        #welcome_container {
+            position: relative;
+            border: 2px solid rgb(5, 87, 240);
             padding: 70px;
-            margin-top: 70px;
+        }
+
+        #project_container {
+            position: relative;
+            border: 2px solid rgb(250, 7, 7);
+            padding: 70px;
+
         }
 
         .second-paragraph {
@@ -36,9 +45,10 @@
         #social_logos {
             position: absolute;
             cursor: pointer;
-            bottom: 10px;
+            top: 0px;
             left: 50px;
             border-radius: 10px;
+            display: none;
         }
 
         .github_logo {
@@ -46,31 +56,59 @@
             border-radius: 10px
         }
 
-        .instagram_logo {
+        .linkedin_logo {
             border-radius: 10px;
+        }
+
+        .project-heading {
+            font-family: monospace;
+            bottom: 197px;
+            right: 10px;
+        }
+
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+        #leader_container:after {
+            content: "";
+            display: table;
+            clear: both;
         }
     </style>
 </head>
 
 <body>
-    <div id="container">
-        <h1>Welcome,</h1>
-        <p class="description"> <br> My Arturo Torres Damian and I am Up and coming software developer looking for an
-            internship to further my passion and understanding of computer programming.
-        </p>
+    <div id="leader_container">
+        <div id="welcome_container" class="column">
+            <h1>Welcome,</h1>
+            <p class="description"> <br> My Arturo Torres Damian and I am Up and coming Chincano software developer
+                looking
+                for an
+                internship to further my passion and understanding of computer programming.
+            </p>
 
-        <p class="second-paragraph">I am currently learning CSS and HTML while working on a website with that knowledge.
-        </p>
+            <p class="second-paragraph">I am currently learning CSS and HTML while working on a website with that
+                knowledge.
+            </p>
+
+        </div>
+
+        <div id="project_container" class="column">
+            <h1 class="project-heading">Projects</h1>
+            <p>I am currently working on this website as my first personal project and experimenting with HTML/CSS</p>
+
+        </div>
 
     </div>
-
 
     <div id="social_logos">
         <a href="https://github.com/huey704" target="_blank">
             <img class="github_logo" src="github-mark.png" height="64" alt="Github logo">
         </a>
-        <a href="https://www.instagram.com/arturotorresdamian17/" target="_blank">
-            <img class="instagram_logo" src="image.png" height="64" alt="Instagram logo">
+        <a href="https://www.linkedin.com/in/arturo-torres-a51495360/" target="_blank">
+            <img class="linkedin_logo" src="linkedin_image.png" height="64" alt="linkedin_logo logo">
         </a>
         <a href="mailto:arturotorresdamian1@gmail.com" target="_blank">
             <img class="gmail_logo" src="image copy.png" height="64" alt="email">
