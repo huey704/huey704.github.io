@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        .row {
+            margin-left: 25%;
+            position: relative;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .wrapper {
+            margin: 10px;
+        }
+
+        /* social media buttons */
+        #social_logos {
+            position: absolute;
+            cursor: pointer;
+            bottom: 0px;
+            left: 50px;
+            border-radius: 10px;
+            display: none;
+        }
+
+        .github_logo {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px
+        }
+
+        .linkedin_logo {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column" style="background-color:#696868;">
+            <div class="wrapper">
+                <h1>Welcome</h1>
+                <p>
+                    My Arturo Torres Damian and I am Up and coming Chincano software developer looking for an internship
+                    to further my passion and understanding of computer programming.
+                </p>
+
+                <p>
+                    I am currently learning CSS and HTML while working on a website with that knowledge.
+                </p>
+            </div>
+        </div>
+        <div class="column" style="background-color:#555454;">
+            <div class="wrapper">
+                <h1>Projects</h1>
+                <p>
+                    I am currently working on this website as my first personal project and experimenting with HTML/CSS
+                </p>
+                <p>
+                    After getting this working well I would also like to start learning phyton as after talking to
+                    different tech compamies, all of them used phyton or had it listed as a language to learn.
+                </p>
+            </div>
+        </div>
+        <div id="social_logos">
+            <a href="https://github.com/huey704" target="_blank">
+                <img class="github_logo" src="github-mark.png" height="64" alt="Github logo">
+            </a>
+            <a href="https://www.linkedin.com/in/arturo-torres-a51495360/" target="_blank">
+                <img class="linkedin_logo" src="linkedin_image.png" height="64" alt="linkedin_logo logo">
+            </a>
+            <a href="mailto:arturotorresdamian1@gmail.com" target="_blank">
+                <img class="gmail_logo" src="image copy.png" height="64" alt="email">
+            </a>
+        </div>
+
+    </div>
+
+</body>
