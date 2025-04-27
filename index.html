@@ -7,12 +7,11 @@
             background-color: #353434;
             color: rgb(255, 255, 255);
             font-family: monospace;
-            font-size: large;
         }
 
-        h1 {
+        .welcome_header {
             margin-bottom: 0px;
-            font-size: 60px;
+            font-size: 55px;
         }
 
         p {
@@ -22,19 +21,22 @@
 
         #leader_container {
             position: relative;
-            margin: 0 auto;
         }
 
         #welcome_container {
             position: relative;
-            border: 2px solid rgb(5, 87, 240);
-            padding: 70px;
+            box-sizing: border-box;
+            left: 100px;
+            width: 700px;
+            padding: 10px;
         }
 
         #project_container {
             position: relative;
-            border: 2px solid rgb(250, 7, 7);
-            padding: 70px;
+            box-sizing: border-box;
+            width: 400px;
+            left: 500px;
+            padding: 10px;
 
         }
 
@@ -60,15 +62,13 @@
             border-radius: 10px;
         }
 
-        .project-heading {
+        .project-header {
             font-family: monospace;
-            bottom: 197px;
-            right: 10px;
+            font-size: 55px;
         }
 
         .column {
             float: left;
-            padding: 10px;
         }
 
         #leader_container:after {
@@ -82,7 +82,7 @@
 <body>
     <div id="leader_container">
         <div id="welcome_container" class="column">
-            <h1>Welcome,</h1>
+            <h1 class="welcome_header">Welcome</h1>
             <p class="description"> <br> My Arturo Torres Damian and I am Up and coming Chincano software developer
                 looking
                 for an
@@ -96,7 +96,7 @@
         </div>
 
         <div id="project_container" class="column">
-            <h1 class="project-heading">Projects</h1>
+            <h1 class="project-header">Projects</h1>
             <p>I am currently working on this website as my first personal project and experimenting with HTML/CSS</p>
 
         </div>
