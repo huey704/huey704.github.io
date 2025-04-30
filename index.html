@@ -1,60 +1,53 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
 <head>
-    <style type="text/css">
+    <style>
         body {
-            background-color: #353434;
-            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
             font-family: monospace;
+            background-color: rgb(0, 0, 0);
+            font-size: 16px;
+            text-align: justify;
+            color: rgb(32, 230, 14)
         }
 
-        .welcome_header {
-            margin-bottom: 0px;
-            font-size: 55px;
-        }
-
-        p {
-            padding: 0px;
-            margin: 0px;
-        }
-
-        #leader_container {
+        .column {
             position: relative;
+            float: left;
+            width: 50%
         }
 
-        #welcome_container {
+        .row {
+            margin-left: 25%;
             position: relative;
-            box-sizing: border-box;
-            left: 100px;
-            width: 700px;
-            padding: 10px;
+            margin-top: 90px;
+            margin-right: 30px;
         }
 
-        #project_container {
-            position: relative;
-            box-sizing: border-box;
-            width: 400px;
-            left: 500px;
-            padding: 10px;
-
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
         }
 
-        .second-paragraph {
-            padding-top: 10px;
+        .wrapper {
+            margin: 10px;
         }
 
+        /* social media buttons */
         #social_logos {
             position: absolute;
             cursor: pointer;
-            top: 0px;
+            bottom: 30px;
             left: 50px;
             border-radius: 10px;
-            display: none;
+
         }
 
         .github_logo {
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(142, 145, 142);
             border-radius: 10px
         }
 
@@ -62,45 +55,53 @@
             border-radius: 10px;
         }
 
-        .project-header {
-            font-family: monospace;
-            font-size: 55px;
+        /* personal logo image  */
+        .personal_logo {
+            position: relative;
+            bottom: 200px;
+            right: 370px;
+
         }
 
-        .column {
-            float: left;
-        }
-
-        #leader_container:after {
-            content: "";
-            display: table;
-            clear: both;
+        h1 {
+            font-size: 50px;
         }
     </style>
 </head>
 
 <body>
-    <div id="leader_container">
-        <div id="welcome_container" class="column">
-            <h1 class="welcome_header">Welcome</h1>
-            <p class="description"> <br> My Arturo Torres Damian and I am Up and coming Chincano software developer
-                looking for an internship to further my passion and understanding of computer programming.
-            </p>
+    <div class="row">
+        <div class="column">
+            <div class="wrapper">
+                <h1>Welcome</h1>
+                <p>
+                    My name is Arturo Torres Damian and I an up-and-coming Chicano software developer looking for an
+                    internship to further my passion for and understanding of computer programming.
+                </p>
 
-            <p class="second-paragraph">I am currently learning CSS and HTML while working on a website with that
-                knowledge.
-            </p>
-
+                <p>
+                    I am currently learning CSS and HTML while working on this website with that knowledge.
+                </p>
+            </div>
         </div>
-
-        <div id="project_container" class="column">
-            <h1 class="project-header">Projects</h1>
-            <p>I am currently working on this website as my first personal project and experimenting with HTML/CSS</p>
-
+        <div class="column" style="">
+            <div class="wrapper">
+                <h1>Projects</h1>
+                <p>
+                    I am currently working on this website as my first personal project and experimenting with HTML/CSS.
+                </p>
+                <p>
+                    After getting this working well, I would also like to start learning Python. After talking to
+                    multiple tech compamies, I learned that all of them used Python or had it listed as a suggested
+                    language to learn.
+                </p>
+            </div>
+        </div>
+        <div>
+            <img class="personal_logo" src="personal_logo_green.png" alt="personal logo" height="200">
         </div>
 
     </div>
-
     <div id="social_logos">
         <a href="https://github.com/huey704" target="_blank">
             <img class="github_logo" src="github-mark.png" height="64" alt="Github logo">
@@ -112,7 +113,6 @@
             <img class="gmail_logo" src="image copy.png" height="64" alt="email">
         </a>
     </div>
-
 </body>
 
-<html>
+</html>
