@@ -38,6 +38,24 @@
             margin: 10px;
         }
 
+        .glow {
+            /* adds glowing animations to the headers */
+            color: rgb(0, 255, 0);
+            text-shadow: 0 0 10px;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #5ae966, 0 0 20px #5ae966, 0 0 10px #08e600, 0 0 20px #08e600, 0 0 50px #08e600, 0 0 60px #08e600, 0 0 70px #08e600;
+            }
+
+            to {
+                text-shadow: 0 0 10px #5ae966, 0 0 30px #08e600, 0 0 30px #08e600, 0 0 50px #08e600, 0 0 60px #08e600, 0 0 80px #08e600, 0 0 50px #08e600;
+            }
+
+        }
+
         /* social media buttons */
         #social_logos {
             position: absolute;
@@ -93,13 +111,13 @@
         <div class="column">
             <div class="wrapper">
 
-                <h1>Welcome,</h1>
+                <h1 class="glow">Welcome,</h1>
                 <p> Hello I am Arturo Torres Damian, an aspiring Chicano software developer. I'm building this project
                     as
                     part of my exploration of frontend development and programming in general.
                 </p>
 
-                <h2>About Me</h2>
+                <h2 class="glow">About Me</h2>
 
                 <p>
                     I am currently learning frontend development with HTML and CSS and exploring some JavaScript. I
@@ -112,7 +130,7 @@
         </div>
         <div class="column" style="">
             <div class="wrapper">
-                <h1>Projects</h1>
+                <h1 class="glow">Projects</h1>
                 <p>
                     This website is my first personal project. I am using this to experiment with HTML/CSS and
                     building up my frontend development skills. I am also learning JavaScript so I can also start
@@ -121,7 +139,7 @@
                     but I have been realy enjoying learning frontend development.
                 </p>
 
-                <h2>List of projects</h2>
+                <h2 class="glow">List of projects</h2>
                 <ul class="a">
                     <li>
                         <a href="https://github.com/huey704/Motor-Racing-Website" target="_blank">
